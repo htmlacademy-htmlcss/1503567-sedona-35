@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <!-- Или class="menu"> как в макете -->
+      <nav class="navigation">
+        <a class="main-header-logo" title="Ссылка на эту же страницу"><img src="#" alt="Логотип сайта городка Седона"></a>
+        <!-- Или class="menu-list" как в макете -->
+        <ul class="navigation-list">
+          <!-- Или class="menu-item" как в макете -->
+          <li class="navigation-item">
+            <!-- Или class="menu-link" как в макете. Аналогично дальше по списку в header -->
+            <a class="navigation-link" title="Ссылка на эту же страницу">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <!-- ВАЖНО! Блок со скрытыми элементами -->
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">
+                Поиск
+              </span>
+            </a>
+          </li>
+          <li class="navigation-item navigation-user">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">
+                В избранное
+              </span>
+            </a>
+          </li>
+          <!-- ВАЖНО! Является BUTTOM -->
+          <li class="navigation-item navigation-user">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">
+                ХОЧУ СЮДА!
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer class="page-footer">
+      <section class="footer-social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+          <a class="button" href="https://vk.com/htmlacademy"><img src="#" alt="Vkontakte"></a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="https://t.me/htmlacademy"><img src="#" alt="Telegram"></a>
+          </li>
+          <li class="footer-social-item">
+              <a class="button" href="https://www.youtube.com/user/htmlacademyru"><img src="#" alt="Youtube"></a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer-phone-number">
+        <h2 class="visually-hidden">Телефон</h2>
+        <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+      </section>
+      <section class="footer-contact-academy">
+        <h2 class="visually-hidden">Сайт HTML Academy</h2>
+        <a class="develop-logo" href="https://htmlacademy.ru/"><img src="#" alt="Логотип сайта разработчика"></a>
+      </section>
+    </footer>
+  </body>
+</html>
