@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
     <base href="https://htmlacademy-htmlcss.github.io/1503567-sedona-35/2/">
 </head>
+
   <body>
     <header class="page-header">
       <!-- Или class="menu"> как в макете -->
@@ -42,12 +44,9 @@
               </span>
             </a>
           </li>
-          <!-- ВАЖНО! Является BUTTOM -->
           <li class="navigation-item navigation-user">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">
-                ХОЧУ СЮДА!
-              </span>
+            <a class="navigation-link button" href="#">
+              Хочу сюда!
             </a>
           </li>
         </ul>
@@ -72,17 +71,17 @@
         <form class="catalog-form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
-             <ul class="catalog-filter-list">
+            <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                 <input class="control-input" type="checkbox" name="Бассейн" checked>
-                 Бассейн
+                  <input class="control-input" type="checkbox" name="Бассейн" checked>
+                  Бассейн
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                 <input class="control-input" type="checkbox" name="Парковка" checked>
-                 Парковка
+                  <input class="control-input" type="checkbox" name="Парковка" checked>
+                  Парковка
                 </label>
               </li>
               <li class="catalog-filter-item">
@@ -91,43 +90,46 @@
                   Wi-Fi
                 </label>
               </li>
-             </ul>
+            </ul>
           </fieldset>
 
-           <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Тип жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                 <input class="control-input" type="radio" name="type-of-housing" value="hotel" checked>
-                 Гостиница
+                  <input class="control-input" type="radio" name="type-of-housing" value="hotel" checked>
+                  Гостиница
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                 <input type="radio" name="type-of-housing" value="motel" >
-                 Мотель
+                  <input type="radio" name="type-of-housing" value="motel">
+                  Мотель
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                 <input type="radio" name="type-of-housing" value="apartments">Апартаменты
+                  <input type="radio" name="type-of-housing" value="apartments">Апартаменты
                 </label>
               </li>
             </ul>
-           </fieldset>
-           <fieldset>
-             <legend><h2>Стоимость, ₽:</h2></legend>
-             <!-- Добавить поле вывода информации <output name="cost"></output>-->
-              <input type="range" id="cost" name="cost" min="0" max="12000" step="100">
-           </fieldset>
-           <input type="submit" value="ПРИМЕНИТЬ">
-           <input type="reset" value="СБРОСИТЬ">
-         </form>
+          </fieldset>
+          <fieldset>
+            <legend>
+              <h2>Стоимость, ₽:</h2>
+            </legend>
+            <!-- Добавить поле вывода информации <output name="cost"></output>-->
+            <input type="range" id="cost" name="cost" min="0" max="12000" step="100">
+          </fieldset>
+          <input class="button-blue" type="submit" value="ПРИМЕНИТЬ">
+          <input type="reset" value="СБРОСИТЬ">
+        </form>
       </section>
 
       <section class="catalog">
-        <select class="select-control" arai-label="Сортировка">
+        <label class="visually-hidden" for="sorting">Сортировка</label>
+        <select class="select-control" id="sorting">
           <option value="popular">Сначала популярные</option>
           <option value="cheap" selected>Сначала дешёвые</option>
           <option value="expensive">Сначала дорогое</option>
@@ -149,9 +151,9 @@
             </a>
             <p>Гостиница</p>
             <b class="product-item-price">От 4000 ₽</b>
-            <a class="more-info-button" href="#">ПОДРОБНЕЕ</a>
+            <a class="button" href="#">Подробнее</a>
             <p class="rating"><span class="visually-hidden">4 звезды</span></p>
-            <button class="button-disable" type="button">В избранное</button>
+            <button class="button-blue" type="button">В избранное</button>
             <a class="rating-button" href="#">Рейтинг: 8,5</a>
           </li>
           <li class="product-item">
@@ -161,9 +163,9 @@
             </a>
             <p>Гостиница</p>
             <b class="product-item-price">От 5000 ₽</b>
-            <a class="more-info-button" href="#">ПОДРОБНЕЕ</a>
+            <a class="button" href="#">Подробнее</a>
             <p class="rating"><span class="visually-hidden">4 звезды</span></p>
-            <button class="button-disable" type="button">В избранное</button>
+            <button class="button-blue" type="button">В избранное</button>
             <a class="rating-button" href="#">Рейтинг: 9,2</a>
           </li>
           <li class="product-item">
@@ -173,9 +175,9 @@
             </a>
             <p>Гостиница</p>
             <b class="product-item-price">От 2500 ₽</b>
-            <a class="more-info-button" href="#">ПОДРОБНЕЕ</a>
+            <a class="button" href="#">Подробнее</a>
             <p class="rating"><span class="visually-hidden">3 звезды</span></p>
-            <button class="button-disable" type="button">В избранное</button>
+            <button class="button-blue" type="button">В избранное</button>
             <a class="rating-button" href="#">Рейтинг: 6,9</a>
           </li>
           <li class="product-item">
@@ -185,9 +187,9 @@
             </a>
             <p>Гостиница</p>
             <b class="product-item-price">От 1500 ₽</b>
-            <a class="more-info-button" href="#">ПОДРОБНЕЕ</a>
+            <a class="button" href="#">Подробнее</a>
             <p class="rating"><span class="visually-hidden">2 звезды</span></p>
-            <button class="button-disable" type="button">В избранное</button>
+            <button class="button-blue" type="button">В избранное</button>
             <a class="rating-button" href="#">Рейтинг: 5,0</a>
           </li>
         </ul>
@@ -196,21 +198,31 @@
             <a class="pagination-link pagination-current">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
+            <a class="pagination-link button-blue" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
+            <a class="pagination-link button-blue" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
+            <a class="pagination-link button-blue" href="#">4</a>
           </li>
           <li class="pagination-item">
             <a>...</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">10</a>
+            <a class="pagination-link button-blue" href="#">10</a>
           </li>
         </ul>
+      </section>
+      <section class="subscribe">
+        <p>
+        <h2>Подпишитесь на рассылку</h2>
+        </p>
+        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="appointent-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input class="field" placeholder="Ваш e-mail" type="email" name="e-mail address">
+          <button class="button button-blue" type="submit">Подписаться</button>
+        </form>
       </section>
     </main>
 
@@ -219,13 +231,13 @@
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-          <a class="button" href="https://vk.com/htmlacademy"><img src="#" alt="Vkontakte"></a>
+            <a class="button-vk" href="https://vk.com/htmlacademy" title="ВКонтакте"></a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://t.me/htmlacademy"><img src="#" alt="Telegram"></a>
+            <a class="button-telegram" href="https://t.me/htmlacademy" title="Telegram"></a>
           </li>
           <li class="footer-social-item">
-              <a class="button" href="https://www.youtube.com/user/htmlacademyru"><img src="#" alt="Youtube"></a>
+            <a class="button-youtube" href="https://www.youtube.com/user/htmlacademyru" title="YouTube"></a>
           </li>
         </ul>
       </section>
@@ -239,4 +251,5 @@
       </section>
     </footer>
   </body>
+
 </html>
