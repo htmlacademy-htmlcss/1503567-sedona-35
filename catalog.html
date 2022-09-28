@@ -8,19 +8,21 @@
     <header class="page-header">
       <!-- Или class="menu"> как в макете -->
       <nav class="navigation">
-        <a class="main-header-logo" title="Ссылка на эту же страницу"><img src="#" alt="Логотип сайта городка Седона"></a>
+        <a class="main-header-logo" href="index.html" title="Ссылка на главную страницу">
+          <img src="#" alt="Логотип сайта городка Седона">
+        </a>
         <!-- Или class="menu-list" как в макете -->
         <ul class="navigation-list">
           <!-- Или class="menu-item" как в макете -->
           <li class="navigation-item">
             <!-- Или class="menu-link" как в макете. Аналогично дальше по списку в header -->
-            <a class="navigation-link" title="Ссылка на эту же страницу">Главная</a>
+            <a class="navigation-link" href="index.html" title="Ссылка на главную страницу">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">О Седоне</a>
+            <a class="navigation-link" href="about.html">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link navigation-link-current" title="Ссылка на эту страницу">Гостиницы</a>
           </li>
         </ul>
         <!-- ВАЖНО! Блок со скрытыми элементами -->
@@ -51,37 +53,93 @@
       </nav>
     </header>
 
-    <main>
-      <section class="filter">
-       <h1>Гостиницы Седоны</h1>
-        <!-- Добавить панель навигации между страницами-->
-        <form class="filter-form" action="https://echo.htmlacademy.ru/" method="post">
-         <fieldset>
-            <legend><h2>Инфраструктура:</h2></legend>
-             <input type="checkbox" name="infrastructure" value="swimming-pool" checked>Бассейн
-             <input type="checkbox" name="infrastructure" value="parking" checked>Парковка
-             <input type="checkbox" name="infrastructure" value="wi-fi">Wi-Fi
-          </fieldset>
-          <fieldset>
-            <legend><h2>Тип жилья:</h2></legend>
-             <input type="radio" name="type-of-housing" value="hotel" checked>Гостиница
-             <input type="radio" name="type-of-housing" value="motel" >Мотель
-             <input type="radio" name="type-of-housing" value="apartments">Апартаменты
-          </fieldset>
-          <fieldset>
-            <legend><h2>Стоимость, ₽:</h2></legend>
-            <!-- Добавить поле вывода информации <output name="cost"></output>-->
-             <input type="range" id="cost" name="cost" min="0" max="12000" step="100">
-          </fieldset>
-          <input type="submit" value="ПРИМЕНИТЬ">
-          <input type="reset" value="СБРОСИТЬ">
-        </form>
-      </section>
-      <section class="catalog">
-        <!-- Добавить поле результатов поиска и фильтр по цене-->
-        <div class="filter-catalog">
+    <main class="main-inner">
+      <header class="inner-header">
+        <h1 class="inner-header-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-items">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-items">
+            <a class="breadcrumbs-link">Каталог</a>
+          </li>
+        </ul>
+      </header>
 
-        </div>
+      <section class="catalog-products">
+        <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+        <form class="catalog-form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Инфраструктура:</legend>
+             <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                 <input class="control-input" type="checkbox" name="Бассейн" checked>
+                 Бассейн
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                 <input class="control-input" type="checkbox" name="Парковка" checked>
+                 Парковка
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="Wi-Fi">
+                  Wi-Fi
+                </label>
+              </li>
+             </ul>
+          </fieldset>
+
+           <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Тип жилья:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                 <input class="control-input" type="radio" name="type-of-housing" value="hotel" checked>
+                 Гостиница
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                 <input type="radio" name="type-of-housing" value="motel" >
+                 Мотель
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                 <input type="radio" name="type-of-housing" value="apartments">Апартаменты
+                </label>
+              </li>
+            </ul>
+           </fieldset>
+           <fieldset>
+             <legend><h2>Стоимость, ₽:</h2></legend>
+             <!-- Добавить поле вывода информации <output name="cost"></output>-->
+              <input type="range" id="cost" name="cost" min="0" max="12000" step="100">
+           </fieldset>
+           <input type="submit" value="ПРИМЕНИТЬ">
+           <input type="reset" value="СБРОСИТЬ">
+         </form>
+      </section>
+
+      <section class="catalog">
+        <select class="select-control" arai-label="Сортировка">
+          <option value="popular">Сначала популярные</option>
+          <option value="cheap" selected>Сначала дешёвые</option>
+          <option value="expensive">Сначала дорогое</option>
+        </select>
+        <a class="button button-card">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
+        <a href="#" class="button button-table">
+          <span class="visually-hidden">Показать таблицу</span>
+        </a>
+        <a href="#" class="button button-light">
+          <span class="visually-hidden">Показать список</span>
+        </a>
         <ul class="product-list">
           <li class="product-item">
             <a class="product-item-link" href="#">
