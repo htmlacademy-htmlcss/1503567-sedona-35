@@ -1,9 +1,39 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
 .hero {
   background: url(../images/index/hero.jpg) no-repeat;
 }
 
 .subscribe {
+  font-family: "PT Sans";
+  font-style: normal;
   background-image: url(../images/index/footer-background.jpg);
   background-size: 1200px 415px;
   background-repeat: no-repeat;
+}
+
+.subscribe-tittle {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.subscribe-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
 }
