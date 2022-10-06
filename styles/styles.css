@@ -14,16 +14,92 @@
   font-display: swap;
 }
 
-.hero {
-  background: url(../images/index/hero.jpg) no-repeat;
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #F2F2F2;
 }
 
+.navigation {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.navigation-link {
+  font-family: "PT Sans", sans-serif;
+  color: inherit;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.button {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.hero {
+  background-color: #1e1e1e;
+  background: url("../images/index/hero.jpg") no-repeat;
+}
+
+.hero-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+.advantages-item-blue {
+  background: #82B3D3;
+  color: #FFFFFF;
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+}
+
+
+
+
+
+
 .subscribe {
-  font-family: "PT Sans";
   font-style: normal;
-  background-image: url(../images/index/footer-background.jpg);
-  background-size: 1200px 415px;
-  background-repeat: no-repeat;
+  background-image: url("../images/index/footer-background.jpg");
+  background-size: cover;
+  width: 1200px;
+  min-height: 415px;
+
 }
 
 .subscribe-tittle {
@@ -36,4 +112,15 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+}
+
+
+
+
+
+
+.catalog-products {
+  background-image: url("../images/catalog/catalog-background.jpg");
+  background-size: cover;
+  /* если прописывыть width и height, то пойдут баги (кнопки "Применить" и "Сбросить" перестают помещаться). Постараюсь исправить в следующих главах*/
 }
