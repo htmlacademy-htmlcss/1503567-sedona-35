@@ -26,6 +26,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  text-align: center;
   text-transform: capitalize;
   color: #000000;
   background-color: #FFFFFF;
@@ -68,6 +69,14 @@ body {
   color: #333333;
 }
 
+.advantages-list {
+  list-style-type: none;
+}
+
+.advantages-list-advice {
+  list-style-type: none;
+}
+
 .advantages-item-blue {
   background: #82B3D3;
   color: #FFFFFF;
@@ -88,39 +97,111 @@ body {
   color: #333333;
 }
 
+.white-text {
+  color: #FFFFFF;
+}
 
+.background-1 {
+  background: rgba(131, 179, 211, 0.12);
+}
 
+.background-2 {
+  background: rgba(131, 179, 211, 0.2);
+}
 
+.search {
+  width: 1200px;
+  height: 406px;
+  background: #FFFFFF;
+}
 
+.search-tittle {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.search-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
 
 .subscribe {
   font-style: normal;
   background-image: url("../images/index/footer-background.jpg");
+  background-color: #000000;
   background-size: cover;
   width: 1200px;
   min-height: 415px;
-
 }
 
 .subscribe-tittle {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .subscribe-text {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
+.appointent-form {
+  text-align: center;
+}
 
+.page-footer {
+  background: #FFFFFF;
+}
 
+.contacts-phone {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration-line: none;
+}
 
-
+.footer-social-list {
+  list-style-type: none;
+}
 
 .catalog-products {
   background-image: url("../images/catalog/catalog-background.jpg");
   background-size: cover;
   /* если прописывыть width и height, то пойдут баги (кнопки "Применить" и "Сбросить" перестают помещаться). Постараюсь исправить в следующих главах*/
+}
+
+.breadcrumbs {
+  list-style-type: none;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
+}
+
+.product-list {
+  list-style-type: none;
+}
+
+.product-item-link {
+  text-decoration: none;
+}
+
+.pagination {
+  list-style-type: none;
 }
