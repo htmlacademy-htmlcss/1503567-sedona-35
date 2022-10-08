@@ -39,14 +39,75 @@ body {
   text-decoration: none;
 }
 
-.button {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-}
-
 .navigation-list {
   list-style-type: none;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  background: #756157;
+  color: #FFFFFF;
+  border-radius: 4px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 8px 50px;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.button-big {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.rating-button {
+  width: 140px;
+  height: 37px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+  text-transform: uppercase;
+  background: #F2F2F2;
+  color: #333333;
+  border-radius: 4px;
+}
+
+.pagination-button {
+  width: 60px;
+  height: 60px;
+  background: #82B3D3;
+  border-radius: 4px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  gap: 10px;
+  display:grid;
+}
+
+.blue {
+  background: #82B3D3;
+}
+
+.green {
+  background: #7DB54F;
+}
+
+.invisible {
+  border: medium none;
+  background-image: none;
+  background: transparent;
+  background-color: transparent;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
 }
 
 .hero {
@@ -73,13 +134,20 @@ body {
   list-style-type: none;
 }
 
-.advantages-list-advice {
-  list-style-type: none;
+.advantages-item {
+  width: 400px;
+  min-height: 384px;
 }
 
-.advantages-item-blue {
-  background: #82B3D3;
-  color: #FFFFFF;
+.advantages-foto {
+  width: 800px;
+  height: 384px;
+}
+
+.advantages-list-advice {
+  list-style-type: none;
+  width: 400px;
+  min-height: 384px;
 }
 
 .advantages-title {
@@ -109,17 +177,23 @@ body {
   background: rgba(131, 179, 211, 0.2);
 }
 
+.background-3 {
+  background: #82B3D3;
+  color: #FFFFFF;
+}
+
 .search {
   width: 1200px;
   height: 406px;
   background: #FFFFFF;
+  text-align: center;
+  align-items: center;
 }
 
 .search-tittle {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  text-align: center;
   text-transform: uppercase;
   color: #000000;
 }
@@ -128,7 +202,6 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
   color: #333333;
 }
 
@@ -180,18 +253,44 @@ body {
   list-style-type: none;
 }
 
-.catalog-products {
+.inner-header {
   background-image: url("../images/catalog/catalog-background.jpg");
   background-size: cover;
   /* если прописывыть width и height, то пойдут баги (кнопки "Применить" и "Сбросить" перестают помещаться). Постараюсь исправить в следующих главах*/
+}
+
+.inner-header-title {
+  color: #FFFFFF;
 }
 
 .breadcrumbs {
   list-style-type: none;
 }
 
+.breadcrumbs-link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.catalog-products {
+  color: #FFFFFF;
+}
+
 .catalog-filter-list {
   list-style-type: none;
+}
+
+.result {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.product-item {
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
 }
 
 .product-list {
@@ -202,6 +301,51 @@ body {
   text-decoration: none;
 }
 
+.product-item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.product-item-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.product-item-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: right;
+  color: #333333;
+}
+
 .pagination {
   list-style-type: none;
+}
+
+.pagination-item {
+  padding: 8px;
+
+}
+
+.pagination-link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+
+.pagination-current {
+  color: #000000;
+}
+
+.pagination-item {
+  width: 60px;
+  height: 60px;
+  text-align: center;
 }
