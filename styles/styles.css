@@ -33,7 +33,6 @@ body {
 }
 
 .navigation-link {
-  font-family: "PT Sans", sans-serif;
   color: inherit;
   text-transform: capitalize;
   text-decoration: none;
@@ -44,6 +43,7 @@ body {
 }
 
 .button {
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -56,6 +56,7 @@ body {
   padding: 8px 50px;
   gap: 10px;
   text-decoration: none;
+  border: 0;
 }
 
 .button-big {
@@ -71,7 +72,6 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-
   text-transform: uppercase;
   background: #F2F2F2;
   color: #333333;
@@ -87,7 +87,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   gap: 10px;
-  display:grid;
+  display: block;
 }
 
 .blue {
@@ -99,15 +99,21 @@ body {
 }
 
 .invisible {
-  border: medium none;
-  background-image: none;
+  border: none;
   background: transparent;
-  background-color: transparent;
 }
 
 .visually-hidden {
-  position: fixed;
-  transform: scale(0);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .hero {
@@ -184,7 +190,7 @@ body {
 
 .search {
   width: 1200px;
-  height: 406px;
+  min-height: 406px;
   background: #FFFFFF;
   text-align: center;
   align-items: center;
@@ -206,10 +212,15 @@ body {
 }
 
 .subscribe {
-  font-style: normal;
   background-image: url("../images/index/footer-background.jpg");
   background-color: #000000;
   background-size: cover;
+  width: 1200px;
+  min-height: 415px;
+}
+
+.alternative-subscribe {
+  background: #FFFFFF;
   width: 1200px;
   min-height: 415px;
 }
@@ -223,12 +234,29 @@ body {
   color: #FFFFFF;
 }
 
+.alternative-subscribe-tittle {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
 .subscribe-text {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #FFFFFF;
+}
+
+.alternative-subscribe-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
 }
 
 .appointent-form {
@@ -256,10 +284,12 @@ body {
 .inner-header {
   background-image: url("../images/catalog/catalog-background.jpg");
   background-size: cover;
-  /* если прописывыть width и height, то пойдут баги (кнопки "Применить" и "Сбросить" перестают помещаться). Постараюсь исправить в следующих главах*/
 }
 
 .inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
   color: #FFFFFF;
 }
 
@@ -268,16 +298,30 @@ body {
 }
 
 .breadcrumbs-link {
-  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 .catalog-products {
   color: #FFFFFF;
 }
 
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
 .catalog-filter-list {
   list-style-type: none;
+}
+
+.cost-tittle {
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .result {
