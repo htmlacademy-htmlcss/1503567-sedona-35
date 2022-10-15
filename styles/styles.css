@@ -14,12 +14,30 @@
   font-display: swap;
 }
 
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
   background-color: #F2F2F2;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
 }
 
 .navigation {
@@ -30,6 +48,14 @@ body {
   text-transform: capitalize;
   color: #000000;
   background-color: #FFFFFF;
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-header-logo {
+  width: 138px;
+  margin-left: 70px;
 }
 
 .navigation-link {
@@ -40,6 +66,20 @@ body {
 
 .navigation-list {
   list-style-type: none;
+  width: 339px;
+  margin: 0;
+  padding: 0;
+  margin-left: 30px;
+}
+
+.navigation-user {
+  width: 268px;
+  margin-right: 70px;
+  margin-left: auto;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .button {
@@ -132,8 +172,25 @@ body {
   color: #333333;
 }
 
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 1200px;
+  margin: 0 auto;
+
+
+}
+
 .advantages-list {
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+
+
 }
 
 .advantages-item {
@@ -148,8 +205,17 @@ body {
 
 .advantages-list-advice {
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+
+  /*
+  list-style-type: none;
   width: 400px;
   min-height: 384px;
+  */
 }
 
 .advantages-title {
@@ -185,11 +251,13 @@ body {
 }
 
 .search {
-  width: 1200px;
+  /*width: 1200px;*/
+  display: flex;
+  flex-direction: column;
   min-height: 406px;
   background: #FFFFFF;
-  text-align: center;
   align-items: center;
+  justify-content: center;
 }
 
 .search-tittle {
@@ -211,8 +279,10 @@ body {
   background-image: url("../images/index/footer-background.jpg");
   background-color: #000000;
   background-size: cover;
-  width: 1200px;
+  display: flex;
+  flex-direction: column;
   min-height: 415px;
+  justify-content: center;
 }
 
 .alternative-subscribe {
@@ -261,6 +331,10 @@ body {
 
 .page-footer {
   background: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .contacts-phone {
@@ -275,6 +349,18 @@ body {
 
 .footer-social-list {
   list-style-type: none;
+  width: 142px;
+  margin-left: 70px;
+  padding: 0;
+
+}
+
+.footer-social-item {
+  width: 47px;
+}
+
+.footer-contact-academy {
+  margin-right: 70px;
 }
 
 .inner-header {
