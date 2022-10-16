@@ -153,8 +153,13 @@ body {
 }
 
 .hero {
-  background-color: #1e1e1e;
   background: url("../images/index/hero.jpg") no-repeat;
+  background-color: #FFFFFF;
+  display: flex;
+  margin: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 767px;
 }
 
 .hero-title {
@@ -178,8 +183,6 @@ body {
   flex-direction: row;
   width: 1200px;
   margin: 0 auto;
-
-
 }
 
 .advantages-list {
@@ -189,8 +192,6 @@ body {
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 0;
-
-
 }
 
 .advantages-item {
@@ -366,6 +367,13 @@ body {
 .inner-header {
   background-image: url("../images/catalog/catalog-background.jpg");
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation-div {
+  width: 1060px;
+  margin: 35px 70px 40px;
 }
 
 .inner-header-title {
@@ -373,10 +381,22 @@ body {
   font-size: 60px;
   line-height: 78px;
   color: #FFFFFF;
+  width: 495px;
+  margin: 0;
 }
 
 .breadcrumbs {
   list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  min-width: 114px;
+  height: 21px;
+  flex-direction: row;
+}
+
+.breadcrumbs-items {
+  padding-right: 10px;
 }
 
 .breadcrumbs-link {
@@ -389,6 +409,34 @@ body {
 
 .catalog-products {
   color: #FFFFFF;
+display: flex;
+
+}
+
+.filter-div {
+  width: 371px;
+  display: flex;
+  flex-direction: row;
+}
+
+.catalog-form {
+  display: flex;
+  flex-direction: row;
+  width: 1060px;
+  height: 160px;
+  margin: 40px 70px 70px;
+  align-items: flex-start;
+  padding: 0;*/
+}
+
+.catalog-filter-group {
+  padding: 0px;
+  gap: 32px;
+  border: 0;
+  min-width: 155px;
+  height: 157px;
+  margin-right: 70px;
+  margin-left: 0;
 }
 
 .catalog-filter-title {
@@ -399,6 +447,9 @@ body {
 
 .catalog-filter-list {
   list-style-type: none;
+  padding-left: 0;
+  margin-top: 32px;
+  margin-bottom: 0;
 }
 
 .cost-tittle {
