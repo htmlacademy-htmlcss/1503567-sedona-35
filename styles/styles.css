@@ -409,14 +409,27 @@ body {
 
 .catalog-products {
   color: #FFFFFF;
-display: flex;
-
-}
-
-.filter-div {
-  width: 371px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 70px 70px;
+  gap: 167px;
+}
+
+.left-filter {
+  width: 371px;
+}
+
+.right-filter {
+  width: 549px;
+}
+
+.cost {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  align-items: flex-start;
 }
 
 .catalog-form {
@@ -424,19 +437,18 @@ display: flex;
   flex-direction: row;
   width: 1060px;
   height: 160px;
-  margin: 40px 70px 70px;
+
   align-items: flex-start;
-  padding: 0;*/
+  padding: 0;
 }
 
 .catalog-filter-group {
   padding: 0px;
   gap: 32px;
   border: 0;
-  min-width: 155px;
+  min-width: 150px;
   height: 157px;
-  margin-right: 70px;
-  margin-left: 0;
+
 }
 
 .catalog-filter-title {
@@ -457,21 +469,64 @@ display: flex;
   line-height: 24px;
 }
 
+.search-result {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 1060px;
+  height: 49px;
+  margin: 50px 70px 40px;
+}
+
 .result {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin-right: 192px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.select-control {
+  width: 292px;
+  height: 49px;
+  margin-right: 70px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.catalog {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1060px;
+  min-height: 896px;
+  margin-right: 70px;
+  margin-left: 70px;
+}
+
+.product-list {
+  list-style-type: none;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
 }
 
 .product-item {
   border: 1px solid #E6E6E6;
   border-radius: 4px;
-}
-
-.product-list {
-  list-style-type: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 340px;
+  height: 438px;
 }
 
 .product-item-link {
@@ -498,6 +553,13 @@ display: flex;
   line-height: 21px;
   text-align: right;
   color: #333333;
+}
+
+.pagination-div {
+  display: flex;
+  flex-direction: row;
+  width: 1060px;
+  margin: 40px 70px 60px;
 }
 
 .pagination {
