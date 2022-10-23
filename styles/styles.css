@@ -211,7 +211,6 @@ body {
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 0;
-
   /*
   list-style-type: none;
   width: 400px;
@@ -290,6 +289,10 @@ body {
   background: #FFFFFF;
   width: 1200px;
   min-height: 415px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .subscribe-tittle {
@@ -353,7 +356,6 @@ body {
   width: 142px;
   margin-left: 70px;
   padding: 0;
-
 }
 
 .footer-social-item {
@@ -482,7 +484,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   margin: 0;
-  padding: o;
+  padding: 0px;
 }
 
 .search-result {
@@ -546,7 +548,6 @@ body {
   border: 1px solid #E6E6E6;
   border-radius: 4px;
   /*display: flex;*/
-
 }
 
 .foto-div {
@@ -588,11 +589,11 @@ body {
 
 .pagination {
   list-style-type: none;
+  display: flex;
 }
 
 .pagination-item {
   padding: 8px;
-
 }
 
 .pagination-link {
