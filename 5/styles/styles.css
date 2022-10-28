@@ -25,9 +25,6 @@ html {
 
 body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -37,6 +34,9 @@ body {
 
 .container {
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   width: 1200px;
 }
 
@@ -49,7 +49,6 @@ body {
   color: #000000;
   background-color: #FFFFFF;
   display: flex;
-  width: 1200px;
   margin: 0 auto;
 }
 
@@ -78,7 +77,8 @@ body {
   margin-left: auto;
 }
 
-.main-container {
+
+.main-index {
   flex-grow: 1;
 }
 
@@ -95,11 +95,13 @@ body {
   padding: 8px 50px;
   text-decoration: none;
   border: 0;
+  display: inline-block;
 }
 
 .button-big {
   font-size: 20px;
   line-height: 36px;
+  display: inline-block;
 }
 
 .rating-button {
@@ -114,6 +116,7 @@ body {
   background: #F2F2F2;
   color: #333333;
   border-radius: 4px;
+  display: inline-block;
 }
 
 .pagination-button {
@@ -123,7 +126,7 @@ body {
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  display: block;
+  display: inline-block;
 }
 
 .blue {
@@ -159,7 +162,15 @@ body {
   margin: 0;
   flex-wrap: wrap;
   justify-content: center;
-  min-height: 767px;
+  min-height: 485px;
+}
+
+.hero-introduction {
+  display: flex;
+  flex-direction: column;
+  min-height: 282px;
+  justify-content: center;
+  background-color: #FFFFFF;
 }
 
 .hero-title {
@@ -167,6 +178,7 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .hero-text {
@@ -181,7 +193,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 1200px;
   margin: 0 auto;
 }
 
@@ -197,6 +208,13 @@ body {
 .advantages-item {
   width: 400px;
   min-height: 384px;
+}
+
+.big-block {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  height: 384px;
 }
 
 .advantages-foto {
@@ -251,13 +269,10 @@ body {
 }
 
 .search {
-  /*width: 1200px;*/
-  display: flex;
-  flex-direction: column;
-  min-height: 406px;
+  min-height: 214px;
   background: #FFFFFF;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  padding: 96px 304px;
 }
 
 .search-tittle {
@@ -266,6 +281,8 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .search-text {
@@ -279,10 +296,9 @@ body {
   background-image: url("../images/index/footer-background.jpg");
   background-color: #000000;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  min-height: 415px;
-  justify-content: center;
+  min-height: 215px;
+  text-align: center;
+  padding: 96px 258px 104px;
 }
 
 .alternative-subscribe {
@@ -366,16 +382,20 @@ body {
   margin-right: 70px;
 }
 
+.main-inner {
+  background-color: #FFFFFF;
+  flex-grow: 1;
+}
+
 .inner-header {
   background-image: url("../images/catalog/catalog-background.jpg");
   background-size: cover;
-  display: flex;
-  flex-direction: column;
+
 }
 
 .navigation-div {
   width: 1060px;
-  margin: 35px 70px 40px;
+  padding: 35px 70px 40px;
 }
 
 .inner-header-title {
@@ -416,6 +436,7 @@ body {
   justify-content: space-around;
   align-items: flex-start;
 }
+
 
 .left-filter {
   width: 371px;
@@ -484,7 +505,6 @@ body {
   font-size: 20px;
   line-height: 24px;
   margin: 0;
-  padding: 0px;
 }
 
 .search-result {
@@ -520,14 +540,10 @@ body {
 }
 
 .catalog {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
   width: 1060px;
   min-height: 896px;
-  margin-right: 70px;
-  margin-left: 70px;
+  padding-right: 70px;
+  padding-left: 70px;
 }
 
 .product-list {
@@ -548,10 +564,6 @@ body {
   border: 1px solid #E6E6E6;
   border-radius: 4px;
   /*display: flex;*/
-}
-
-.foto-div {
-
 }
 
 .product-item-link {
@@ -581,8 +593,6 @@ body {
 }
 
 .pagination-div {
-  display: flex;
-  flex-direction: row;
   width: 1060px;
   margin: 40px 70px 60px;
 }
@@ -609,6 +619,11 @@ body {
 
 .pagination-current {
   color: #000000;
+  width: 60px;
+  background: #F2F2F2;
+  border-radius: 4px;
+  text-transform: uppercase;
+  display: inline-block;
 }
 
 .pagination-item {
