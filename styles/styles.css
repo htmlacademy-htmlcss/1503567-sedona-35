@@ -25,9 +25,6 @@ html {
 
 body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -37,6 +34,9 @@ body {
 
 .container {
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   width: 1200px;
 }
 
@@ -77,7 +77,8 @@ body {
   margin-left: auto;
 }
 
-.main-container {
+
+.main-index {
   flex-grow: 1;
 }
 
@@ -280,6 +281,8 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .search-text {
@@ -379,6 +382,11 @@ body {
   margin-right: 70px;
 }
 
+.main-inner {
+  background-color: #FFFFFF;
+  flex-grow: 1;
+}
+
 .inner-header {
   background-image: url("../images/catalog/catalog-background.jpg");
   background-size: cover;
@@ -428,6 +436,7 @@ body {
   justify-content: space-around;
   align-items: flex-start;
 }
+
 
 .left-filter {
   width: 371px;
@@ -556,8 +565,6 @@ body {
   border-radius: 4px;
   /*display: flex;*/
 }
-
-.foto-div {}
 
 .product-item-link {
   text-decoration: none;
