@@ -442,9 +442,8 @@ body {
   min-height: 160px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: start;
-  gap: 70px;
 }
 
 .cost {
@@ -464,6 +463,7 @@ body {
   flex-direction: row;
   width: 1060px;
   min-height: 160px;
+  justify-content: space-between;
   align-items: flex-start;
   padding: 0;
   gap: 70px;
@@ -475,6 +475,10 @@ body {
   min-width: 150px;
   min-height: 157px;
   margin: 0;
+}
+
+.left-group {
+padding-right: 70px;
 }
 
 .catalog-filter-title {
@@ -545,6 +549,7 @@ body {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
+  align-content:space-between;
 }
 
 .product-item {
@@ -552,7 +557,6 @@ body {
   min-height: 438px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
-  /*display: flex;*/
 }
 
 .product-item-link {
