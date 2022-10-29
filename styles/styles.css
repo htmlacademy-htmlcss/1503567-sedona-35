@@ -430,26 +430,12 @@ body {
   align-items: flex-start;
 }
 
-
-.left-filter {
-  width: 371px;
-  display: flex;
-  align-items: flex-start;
-}
-
-.right-filter {
-  width: 549px;
-  min-height: 160px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: start;
-}
-
 .cost {
   padding: 0;
   margin: 0;
   border: 0;
+  min-width: 358px;
+  margin-left: auto;
 }
 
 .button-div {
@@ -463,22 +449,16 @@ body {
   flex-direction: row;
   width: 1060px;
   min-height: 160px;
-  justify-content: space-between;
   align-items: flex-start;
   padding: 0;
-  gap: 70px;
 }
 
 .catalog-filter-group {
   padding: 0px;
   border: 0;
-  min-width: 150px;
+  min-width: 220px;
   min-height: 157px;
   margin: 0;
-}
-
-.left-group {
-padding-right: 70px;
 }
 
 .catalog-filter-title {
