@@ -219,6 +219,7 @@ body {
 .advantages-item {
   width: 400px;
   min-height: 384px;
+
 }
 
 .big-block {
@@ -229,7 +230,7 @@ body {
 }
 
 .big-block-div {
- display: grid;
+  display: grid;
 }
 
 .advantages-foto {
@@ -368,6 +369,37 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  min-height: 120px;
+  flex-wrap: wrap;
+}
+
+.footer-social {
+  display: flex;
+  min-width: 142px;
+  min-height: 40px;
+  margin-left: 70px;
+
+}
+
+.footer-social-list {
+  list-style-type: none;
+  display: flex;
+  margin: 0px;
+  padding: 0;
+  width: 142px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social-item {
+  min-width: 48px;
+  min-height: 40px;
+}
+
+.footer-phone-number {
+  min-width: 332px;
+  min-height: 40px;
 }
 
 .contacts-phone {
@@ -378,17 +410,6 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration-line: none;
-}
-
-.footer-social-list {
-  list-style-type: none;
-  width: 142px;
-  margin-left: 70px;
-  padding: 0;
-}
-
-.footer-social-item {
-  width: 47px;
 }
 
 .footer-contact-academy {
@@ -601,10 +622,11 @@ body {
 .pagination {
   list-style-type: none;
   display: flex;
+  padding-left: 0px;
 }
 
 .pagination-item {
-  padding: 8px;
+  padding: 8px 8px 8px 0px;
 }
 
 .pagination-link {
@@ -626,6 +648,10 @@ body {
   text-transform: uppercase;
   display: inline-block;
 }
+
+.pagination-interval {
+  background-color:#FFFFFF;
+  }
 
 .pagination-item {
   width: 60px;
