@@ -625,6 +625,7 @@ flex-direction: column;
   height: 212px;
   margin: 0;
   padding: 0;
+  object-fit:contain;
 }
 
 .product-item-title {
