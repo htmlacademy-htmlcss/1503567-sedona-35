@@ -108,10 +108,11 @@ body {
   text-align: center;
   text-transform: uppercase;
   min-height: 20px;
-  padding:8px 26px;
+  padding: 8px 26px;
   text-decoration: none;
-  border: 0;
+  border: none;
   display: inline-block;
+  cursor: pointer;
 }
 
 .button-big {
@@ -147,7 +148,7 @@ body {
 
 .blue {
   background: #82B3D3;
-  padding:8px 20px;
+  padding: 8px 20px;
 
 }
 
@@ -445,7 +446,7 @@ body {
 .inner-header {
   background-image: url("../images/catalog/catalog-background.jpg");
   background-size: cover;
-background-color: #2173a3;
+  background-color: #2173a3;
 }
 
 .navigation-div {
@@ -503,8 +504,8 @@ background-color: #2173a3;
 .button-div {
   width: 191px;
   min-height: 104px;
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog-form {
@@ -623,7 +624,7 @@ flex-direction: column;
   margin: 0;
   padding: 0;
   display: block;
-  object-fit:contain;
+  object-fit: contain;
 }
 
 .product-item-title {
