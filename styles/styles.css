@@ -115,7 +115,7 @@ body {
   cursor: pointer;
 }
 
-.button-big {
+.big-button {
   font-size: 20px;
   line-height: 36px;
   display: inline-block;
@@ -501,7 +501,7 @@ body {
   margin-left: auto;
 }
 
-.button-div {
+.button-container {
   width: 191px;
   min-height: 104px;
   display: flex;
@@ -656,7 +656,7 @@ body {
   margin: 0;
 }
 
-.pagination-div {
+.pagination-container {
   width: 1060px;
   margin: 80px 70px 60px;
 
