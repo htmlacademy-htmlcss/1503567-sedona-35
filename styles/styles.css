@@ -90,7 +90,7 @@ body {
 }
 
 .last-item {
-  padding: 14px 0px 14px 20px;
+  padding: 14px 0 14px 20px;
 }
 
 .main-index {
@@ -238,17 +238,14 @@ body {
 }
 
 .advantages-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin: auto;
-  padding: 0;
-  max-width: 230px;
+  width: 230px;
+  padding: 85px;
 }
 
 .advantages-foto {
   width: 800px;
   min-height: 384px;
+  object-fit: cover;
 }
 
 .advantages-list-advice {
@@ -380,11 +377,11 @@ body {
   padding-left: 20px;
   background: #F2F2F2;
   border: 0;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
 }
 
 #submit-button {
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
 }
 
 .page-footer {
@@ -408,7 +405,7 @@ body {
 .footer-social-list {
   list-style-type: none;
   display: flex;
-  margin: 0px;
+  margin: 0;
   padding: 0;
   width: 142px;
   height: 40px;
@@ -448,7 +445,7 @@ body {
 .inner-header {
   background-image: url("../images/catalog/catalog-background.jpg");
   background-size: cover;
-
+background-color: #2173a3;
 }
 
 .navigation-div {
@@ -520,7 +517,7 @@ flex-direction: column;
 }
 
 .catalog-filter-group {
-  padding: 0px;
+  padding: 0;
   border: 0;
   min-width: 220px;
   min-height: 157px;
@@ -625,6 +622,7 @@ flex-direction: column;
   height: 212px;
   margin: 0;
   padding: 0;
+  display: block;
   object-fit:contain;
 }
 
@@ -634,7 +632,7 @@ flex-direction: column;
   line-height: 28px;
   color: #000000;
   margin: 0;
-  padding: 16px 0px;
+  padding: 16px 0;
 }
 
 .product-item-text {
@@ -699,4 +697,8 @@ flex-direction: column;
 .pagination-item {
   min-width: 60px;
   min-height: 60px;
+}
+
+.html-logo {
+  object-fit: contain
 }
