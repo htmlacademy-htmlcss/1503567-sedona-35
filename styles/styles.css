@@ -98,6 +98,7 @@ body {
   display: block;
   min-height: 24px;
   padding: 22px 12px;
+  cursor: pointer;
 }
 
 .navigation-link-current {
@@ -440,6 +441,7 @@ body {
 }
 
 .mail-field {
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
