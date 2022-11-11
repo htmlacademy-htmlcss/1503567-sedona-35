@@ -12,7 +12,8 @@
       <header class="page-header">
         <nav class="navigation">
           <a class="main-header-logo" href="index.html" title="Ссылка на главную страницу">
-            <img src="images/index/logo-sedona.svg" width="140" height="70" alt="Логотип сайта городка Седона">
+            <img class="icon-sedona" src="images/index/logo-sedona.svg" width="140" height="70"
+              alt="Логотип сайта городка Седона">
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -137,15 +138,29 @@
         <option value="cheap" selected>Сначала дешёвые</option>
         <option value="expensive">Сначала дорогое</option>
       </select>
-      <a class="button-card">
-        <span class="visually-hidden">Показать карточки</span>
-      </a>
-      <a href="#" class="button-table">
-        <span class="visually-hidden">Показать таблицу</span>
-      </a>
-      <a href="#" class="button-light">
-        <span class="visually-hidden">Показать список</span>
-      </a>
+      <section class="toggle">
+        <a class="card-grid-toggle card-grid-toggle-current">
+          <span class="visually-hidden">Показать карточки</span>
+          <svg width="16" height="14" viewbox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"
+              fill="#000" />
+          </svg>
+        </a>
+        <a href="#" class="card-grid-toggle">
+          <span class="visually-hidden">Показать таблицу</span>
+          <svg width="16" height="14" viewbox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000" />
+          </svg>
+        </a>
+        <a href="#" class="card-grid-toggle">
+          <span class="visually-hidden">Показать список</span>
+          <svg width="16" height="14" viewbox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"
+              fill="#000" />
+          </svg>
+        </a>
+      </section>
     </section>
     <section class="catalog">
       <ul class="product-list">
@@ -161,7 +176,13 @@
               <b class="product-item-price">От 4000 ₽</b>
               <a class="button" href="#">Подробнее</a>
               <button class="button blue" type="button">В избранное</button>
-              <p class="rating">****<span class="visually-hidden">4 звезды</span></p>
+              <p class="rating">
+                <span class="visually-hidden">4 звезды</span>
+                <span class="rating-star"></span>
+                <span class="rating-star"></span>
+                <span class="rating-star"></span>
+                <span class="rating-star"></span>
+              </p>
               <a class="rating-button" href="#">Рейтинг: 8,5</a>
             </div>
           </div>
@@ -178,7 +199,13 @@
               <b class="product-item-price">От 5000 ₽</b>
               <a class="button" href="#">Подробнее</a>
               <button class="button green" type="button">В избранном</button>
-              <p class="rating">****<span class="visually-hidden">4 звезды</span></p>
+              <p class="rating">
+                <span class="visually-hidden">4 звезды</span>
+                <span class="rating-star"></span>
+                <span class="rating-star"></span>
+                <span class="rating-star"></span>
+                <span class="rating-star"></span>
+              </p>
               <a class="rating-button" href="#">Рейтинг: 9,2</a>
             </div>
           </div>
@@ -194,7 +221,12 @@
               <b class="product-item-price">От 2500 ₽</b>
               <a class="button" href="#">Подробнее</a>
               <button class="button blue" type="button">В избранное</button>
-              <p class="rating">***<span class="visually-hidden">3 звезды</span></p>
+              <p class="rating">
+                <span class="visually-hidden">3 звезды</span>
+                <span class="rating-star"></span>
+                <span class="rating-star"></span>
+                <span class="rating-star"></span>
+              </p>
               <a class="rating-button" href="#">Рейтинг: 6,9</a>
             </div>
           </div>
@@ -210,7 +242,11 @@
               <b class="product-item-price">От 1500 ₽</b>
               <a class="button" href="#">Подробнее</a>
               <button class="button blue" type="button">В избранное</button>
-              <p class="rating">**<span class="visually-hidden">2 звезды</span></p>
+              <p class="rating">
+                <span class="visually-hidden">2 звезды</span>
+                <span class="rating-star"></span>
+                <span class="rating-star"></span>
+              </p>
               <a class="button rating-button" href="#">Рейтинг: 5,0</a>
             </div>
           </div>
@@ -258,15 +294,13 @@
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="footer-social-link footer-social-vk" href="https://vk.com/htmlacademy" title="ВКонтакте"></a>
-
           </li>
           <li class="footer-social-item">
             <a class="footer-social-link footer-social-telegram" href="https://t.me/htmlacademy" title="Telegram"></a>
-
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-link footer-social-youtube" href="https://www.youtube.com/user/htmlacademyru" title="YouTube"></a>
-
+            <a class="footer-social-link footer-social-youtube" href="https://www.youtube.com/user/htmlacademyru"
+              title="YouTube"></a>
           </li>
         </ul>
       </section>
