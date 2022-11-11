@@ -49,12 +49,23 @@ body {
   color: #000000;
   background-color: #FFFFFF;
   display: flex;
-  min-height: 64px;
+  height: 64px;
   align-items: center;
+  position: relative;
 }
 
 .main-header-logo {
   width: 138px;
+  margin-left: 70px;
+
+}
+
+.icon-sedona {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   margin-left: 70px;
 }
 
@@ -85,20 +96,31 @@ body {
 
 .navigation-item {
   display: block;
-  padding: 22px 12px;
   min-height: 24px;
+  padding: 22px 12px;
+}
+
+.navigation-link-current {
+  border-width: 0 0 2px 0;
+  border-style: solid;
+  border-color: #756257;
+  padding-bottom: 18px;
 }
 
 .navigation-search {
   background-image: url('/images/index/search.svg');
   background-repeat: no-repeat;
   background-position: center;
+  width: 44px;
+  padding: 22px 0;
 }
 
 .navigation-favourites {
   background-image: url('/images/index/heart.svg');
   background-repeat: no-repeat;
   background-position: center;
+  width: 44px;
+  padding: 22px 20px 22px 0;
 }
 
 .last-item {
@@ -278,11 +300,22 @@ body {
 .advantages-title {
   font-size: 24px;
   line-height: 28px;
-  justify-content: flex-start;
   text-align: center;
   text-transform: uppercase;
-  padding: 0 0 30px;
-  margin: 0;
+  margin: 0 auto 30px;
+  width: 175px;
+}
+
+.advantages-line {
+  border: rgba(255, 255, 255, 0.3) solid 1px;
+  width: 60px;
+  margin: 0 auto;
+}
+
+.advantages-line-alternative {
+  border: rgba(0, 0, 0, 0.3) solid 1px;
+  width: 60px;
+  margin: 0 auto;
 }
 
 .advantages-description {
@@ -308,6 +341,31 @@ body {
 
 .background-3 {
   background: #FFFFFF;
+}
+
+.advantages-picture {
+  display: block;
+  min-width: 75px;
+  min-height: 76px;
+  margin: 0 auto 30px;
+}
+
+.icon-home {
+  background-image: url(/images/index/home.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-food {
+  background-image: url(/images/index/food.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-souvenir {
+  background-image: url(/images/index/gift.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .search {
@@ -423,7 +481,6 @@ body {
   height: 40px;
   justify-content: center;
   align-items: center;
-
 }
 
 .footer-social-item {
@@ -434,7 +491,7 @@ body {
 .footer-social-link {
   display: block;
   height: 40px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -585,6 +642,26 @@ body {
   margin: 50px 70px 40px;
 }
 
+.toggle {
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  gap: 8px;
+}
+
+.card-grid-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.card-grid-toggle-current {
+  border: 2px solid #000000
+}
+
 .result {
   font-weight: 700;
   font-size: 30px;
@@ -606,6 +683,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  padding-left: 20px;
 }
 
 .catalog {
@@ -685,13 +763,24 @@ body {
 }
 
 .rating {
+  display: grid;
+  grid-template-columns: repeat(4, 18px);
+  gap: 6px;
   margin: 0;
+}
+
+.rating-star {
+  margin: 0;
+  background-image: url(/images/catalog/rating-star.svg);
+  width: 18px;
+  height: 17px;
+  background-position: left;
+  background-repeat: no-repeat;
 }
 
 .pagination-container {
   width: 1060px;
   margin: 80px 70px 60px;
-
 }
 
 .pagination {
