@@ -121,7 +121,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   width: 44px;
-  padding: 22px 20px 22px 0;
+  padding: 22px 0;
+  margin-right: 8px;
 }
 
 .last-item {
@@ -496,18 +497,16 @@ body {
   background-color: #FFFFFF;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
 }
 
-.footer-social-vk {
-  background-image: url(/images/index/vk.svg);
-}
-
-.footer-social-telegram {
-  background-image: url(/images/index/telegrame.svg);
-}
-
-.footer-social-youtube {
-  background-image: url(/images/index/youtube.svg);
+.footer-social-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .footer-phone-number {
