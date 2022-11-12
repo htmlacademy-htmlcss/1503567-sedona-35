@@ -292,11 +292,6 @@ body {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  /*
-  list-style-type: none;
-  width: 400px;
-  min-height: 384px;
-  */
 }
 
 .advantages-title {
@@ -307,6 +302,15 @@ body {
   margin: 0 auto 30px;
   width: 175px;
   position: relative;
+}
+
+.advantages-title-advice {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto 30px;
+  width: 175px;
 }
 
 .advantages-title::before {
@@ -327,6 +331,15 @@ content: "";
   text-align: center;
   color: #333333;
   margin: 60px 0 0;
+}
+
+.advantages-description-advice {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+  margin: 30px 0 0;
 }
 
 .white-text {
