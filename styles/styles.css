@@ -306,18 +306,18 @@ body {
   text-transform: uppercase;
   margin: 0 auto 30px;
   width: 175px;
+  position: relative;
 }
 
-.advantages-line {
-  border: rgba(255, 255, 255, 0.3) solid 1px;
-  width: 60px;
-  margin: 0 auto;
-}
-
-.advantages-line-alternative {
-  border: rgba(0, 0, 0, 0.3) solid 1px;
-  width: 60px;
-  margin: 0 auto;
+.advantages-title::before {
+position: absolute;
+width:60px;
+height: 2px;
+background-color: rgba(0, 0, 0, 0.3);
+bottom: -32px;
+left: 50%;
+margin-left: -30px;
+content: "";
 }
 
 .advantages-description {
@@ -326,7 +326,7 @@ body {
   line-height: 21px;
   text-align: center;
   color: #333333;
-  margin: 30px 0 0;
+  margin: 60px 0 0;
 }
 
 .white-text {
