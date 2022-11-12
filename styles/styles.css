@@ -498,6 +498,19 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+  color: #83B3D3;
+}
+
+.footer-social-link:hover .footer-social-icon {
+  fill: #68A2CA;
+}
+
+.footer-social-link:focus .footer-social-icon {
+  fill: #68A2CA;
+}
+
+.footer-social-link:active .footer-social-icon {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer-social-icon {
@@ -524,8 +537,36 @@ body {
   text-decoration-line: none;
 }
 
+.contacts-phone:hover {
+  color: #756157;
+}
+
+.contacts-phone:focus {
+  color: #756157;
+}
+
+.contacts-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .footer-contact-academy {
   margin-right: 70px;
+}
+
+.develop-logo {
+  color: #000000;
+}
+
+.develop-logo:hover {
+  color: #756157;
+}
+
+.develop-logo:focus {
+  color: #756157;
+}
+
+.develop-logo:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .main-inner {
