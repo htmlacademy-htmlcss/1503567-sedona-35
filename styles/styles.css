@@ -99,13 +99,21 @@ body {
   min-height: 24px;
   padding: 22px 12px;
   cursor: pointer;
+  position: relative;
 }
 
-.navigation-link-current {
-  border-width: 0 0 2px 0;
-  border-style: solid;
-  border-color: #756257;
-  padding-bottom: 18px;
+.navigation-item:hover {
+  opacity: 50%;
+}
+
+.navigation-link-current::before {
+  position: absolute;
+  right: 12px;
+  bottom: 1px;
+  left: 12px;
+  height: 2px;
+  background-color: #756257;
+  content: "";
 }
 
 .navigation-search {
@@ -138,7 +146,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  background: #756157;
+  background-color: #756157;
   color: #FFFFFF;
   border-radius: 4px;
   text-align: center;
@@ -149,6 +157,24 @@ body {
   border: none;
   display: inline-block;
   cursor: pointer;
+}
+
+.button:hover {
+  background-color: #615048;
+}
+
+.button:focus {
+  background-color: #615048;
+}
+
+.button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
 }
 
 .big-button {
@@ -166,7 +192,7 @@ body {
   text-align: center;
   padding: 8px 22px;
   text-transform: uppercase;
-  background: #F2F2F2;
+  background-color: #F2F2F2;
   color: #333333;
   border-radius: 4px;
 
@@ -174,7 +200,8 @@ body {
 
 .pagination-button {
   width: 60px;
-  background: #82B3D3;
+  background-color: #82B3D3;
+  border: transparent solid 1px;
   border-radius: 4px;
   align-items: center;
   text-align: center;
@@ -183,21 +210,73 @@ body {
 }
 
 .blue {
-  background: #82B3D3;
+  background-color: #82B3D3;
   padding: 8px 20px;
+}
 
+.blue:hover {
+  background-color: #68A2CA;
+}
+
+.blue:focus {
+  background-color: #68A2CA;
+}
+
+.blue:active {
+  background-color: #82B3D3;
+}
+
+.blue:disabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
 }
 
 .green {
-  background: #7DB54F;
+  background-color: #7DB54F;
   padding: 8px 18px;
+}
 
+.green:hover {
+  background-color: #6C9E42;
+}
+
+.green:focus {
+  background-color: #6C9E42;
+}
+
+.green:active {
+  background-color: #7DB54F;
+}
+
+.green:disabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
 }
 
 .invisible {
-  border: none;
-  background: transparent;
+  border: transparent solid 3px;
+  background-color: transparent;
   margin-top: 32px;
+}
+
+.invisible:hover {
+  opacity: 60%;
+  background-color: transparent;
+}
+
+.invisible:focus {
+  background-color: transparent;
+  border:#83B3D3 solid 3px;
+  border-radius: 4px;
+}
+
+.invisible:active {
+  background-color: transparent;
+}
+
+.invisible:disabled {
+  background-color:transparent;
+  color: #FFFFFF;
 }
 
 .visually-hidden {
@@ -270,7 +349,7 @@ body {
   flex-direction: row;
   width: 1200px;
   min-height: 384px;
-  background: #82B3D3;
+  background-color: #82B3D3;
   color: #FFFFFF;
 }
 
@@ -314,14 +393,14 @@ body {
 }
 
 .advantages-title::before {
-position: absolute;
-width:60px;
-height: 2px;
-background-color: rgba(0, 0, 0, 0.3);
-bottom: -32px;
-left: 50%;
-margin-left: -30px;
-content: "";
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: -32px;
+  left: 50%;
+  margin-left: -30px;
+  content: "";
 }
 
 .advantages-description {
@@ -347,15 +426,15 @@ content: "";
 }
 
 .background-1 {
-  background: rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .background-2 {
-  background: rgba(131, 179, 211, 0.2);
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .background-3 {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
 }
 
 .advantages-picture {
@@ -385,7 +464,7 @@ content: "";
 
 .search {
   min-height: 214px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   text-align: center;
   padding: 96px 304px;
 }
@@ -416,7 +495,7 @@ content: "";
 }
 
 .alternative-subscribe {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   background-size: cover;
 }
 
@@ -462,7 +541,7 @@ content: "";
   line-height: 24px;
   width: 452px;
   padding-left: 20px;
-  background: #F2F2F2;
+  background-color: #F2F2F2;
   border: 0;
   border-radius: 4px 0 0 4px;
 }
@@ -472,7 +551,7 @@ content: "";
 }
 
 .page-footer {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -627,6 +706,40 @@ content: "";
   line-height: 21px;
   color: #FFFFFF;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus {
+  color: #FFFFFF;
+}
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbs-home-icon:hover {
+  opacity: 60%;
+}
+
+.breadcrumbs-home-icon:focus {
+  fill: #FFFFFF;
+}
+
+.breadcrumbs-home-icon:active {
+  opacity: 30%;
+}
+
+.breadcrumbs-icon {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: auto;
 }
 
 .catalog-products {
@@ -659,6 +772,7 @@ content: "";
   min-height: 160px;
   align-items: flex-start;
   padding: 0;
+  cursor: default;
 }
 
 .catalog-filter-group {
@@ -680,6 +794,10 @@ content: "";
   padding-left: 0;
   margin-top: 32px;
   margin-bottom: 0;
+}
+
+.control-input {
+  cursor: pointer;
 }
 
 .cost-tittle {
@@ -713,8 +831,20 @@ content: "";
   border-radius: 4px;
 }
 
+.card-grid-toggle:hover {
+  border: 2px solid #000000;
+}
+
+.card-grid-toggle:focus {
+  border: 2px solid #68A2CA;
+}
+
+.card-grid-toggle:active {
+  border: 2px solid #000000;
+}
+
 .card-grid-toggle-current {
-  border: 2px solid #000000
+  border: 2px solid #000000;
 }
 
 .result {
@@ -858,10 +988,33 @@ content: "";
   padding-bottom: 12px;
 }
 
+.pagination-link:hover {
+  background-color: #68A2CA;
+  border: #82B3D3 solid 1px;
+}
+
+.pagination-link:focus {
+  background-color: #68A2CA;
+  border: #82B3D3 solid 1px;
+}
+
+.pagination-link:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .pagination-current {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
   color: #000000;
   width: 60px;
-  background: #F2F2F2;
+  background-color: #F2F2F2;
   border-radius: 4px;
   text-transform: uppercase;
   display: inline-block;

@@ -57,7 +57,21 @@
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-items">
-                <a class="breadcrumbs-link" href="index.html">Главная</a>
+                <a class="breadcrumbs-link" href="index.html">
+                  <svg class="breadcrumbs-home-icon" width="12" height="12" viewbox="0 0 13 13" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" fill="#fff" />
+                    <path d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" />
+                  </svg>
+                </a>
+              </li>
+              <li class="breadcrumbs-items">
+                <a class="breadcrumbs-icon">
+                  <svg width="8" height="10" viewbox="0 0 8 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.92 4.97 2.17.72c-.25-.25-.75-.25-1.13 0-.37.25-.25.75 0 1l4.13 3.75-4 3.75a.76.76 0 0 0 0 1c0 .12.37.25.5.25.12 0 .37-.13.5-.25l4.75-4.25a.59.59 0 0 0 0-1Z" />
+                  </svg>
+                </a>
               </li>
               <li class="breadcrumbs-items">
                 <a class="breadcrumbs-link">Гостиницы</a>
@@ -103,13 +117,13 @@
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input type="radio" name="type-of-housing" value="motel">
+                      <input class="control-input" type="radio" name="type-of-housing" value="motel">
                       Мотель
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input type="radio" name="type-of-housing" value="apartments">Апартаменты
+                      <input class="control-input" type="radio" name="type-of-housing" value="apartments">Апартаменты
                     </label>
                   </li>
                 </ul>
@@ -247,7 +261,7 @@
                 <span class="rating-star"></span>
                 <span class="rating-star"></span>
               </p>
-              <a class="button rating-button" href="#">Рейтинг: 5,0</a>
+              <a class="rating-button" href="#">Рейтинг: 5,0</a>
             </div>
           </div>
         </li>
@@ -256,7 +270,7 @@
     <div class="pagination-container">
       <ul class="pagination">
         <li class="pagination-item">
-          <a class="pagination-link pagination-current">1</a>
+          <a class="pagination-current">1</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link pagination-button" href="#">2</a>
@@ -268,7 +282,7 @@
           <a class="pagination-link pagination-button" href="#">4</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link pagination-current pagination-interval">...</a>
+          <a class="pagination-current pagination-interval">...</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link pagination-button" href="#">10</a>
