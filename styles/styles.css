@@ -322,6 +322,7 @@ body {
   min-height: 282px;
   justify-content: center;
   background-color: #FFFFFF;
+  position: relative;
 }
 
 .hero-title {
@@ -344,7 +345,8 @@ body {
   content: "";
   position: absolute;
   background-image: url(../images/index/hero-vector.svg);
-  bottom: 391px;
+  top:-57px;
+  left:0;
   width: 1200px;
   height: 57px;
 }
