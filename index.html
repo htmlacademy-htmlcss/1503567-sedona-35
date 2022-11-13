@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.svg">
   </head>
 
   <body>
@@ -31,18 +32,26 @@
             <li class="navigation-item navigation-item-search">
               <a class="navigation-link  navigation-link-search" href="#">
                 <span class="visually-hidden">Поиск</span>
-                <svg class="navigation-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" role="img" xmlns="http://www.w3.org/2000/svg"><path d="m19.9 18-3.7-3.7a8 8 0 0 0 1.7-4.8 8 8 0 1 0-3.1 6.3l3.7 3.7 1.4-1.5Zm-10-2.5a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z"/></svg>
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" width="20" height="20"
+                  viewBox="0 0 20 20" role="img" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m19.9 18-3.7-3.7a8 8 0 0 0 1.7-4.8 8 8 0 1 0-3.1 6.3l3.7 3.7 1.4-1.5Zm-10-2.5a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z" />
+                </svg>
               </a>
             </li>
             <li class="navigation-item navigation-item-favorite">
               <a class="navigation-link navigation-link-favorite" href="#">
                 <span class="visually-hidden">Избранное</span>
-                <svg class="navigation-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" role="img" xmlns="http://www.w3.org/2000/svg"><path d="M10.3 19a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.9 2c1.3 0 2.5.5 3.5 1.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5 6 6.9 6.3-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-1 .4l-.7-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/></svg>
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" width="20" height="20"
+                  viewBox="0 0 20 20" role="img" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10.3 19a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.9 2c1.3 0 2.5.5 3.5 1.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5 6 6.9 6.3-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-1 .4l-.7-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
+                </svg>
                 <span class="count-favorite">12</span>
               </a>
             </li>
             <li class="navigation-item last-item">
-              <a class="navigation-link button" href="#">
+              <a class="navigation-link navigation-button href=" #" center">
                 Хочу сюда!
               </a>
             </li>
@@ -196,6 +205,127 @@
         </section>
       </footer>
     </div>
+
+
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-search">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+          <svg class="modal-close-icon" width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14.5 1.8 13.2.5 7.5 6.2 1.8.5.5 1.8l5.7 5.7-5.7 5.7 1.3 1.3 5.7-5.7 5.7 5.7 1.3-1.3-5.7-5.7 5.7-5.7Z" />
+          </svg>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="modal-field-group appointment-form-date-in">
+              <label class="modal-form-label" for="appointment-form-date-in">Дата Заезда:</label>
+              <svg class="modal-field-icon" aria-hidden="true" focusable="false" width="20" height="20"
+                viewBox="0 0 20 20" fill="none" role="img" xmlns="http://www.w3.org/2000/svg">
+                <g opacity=".3" fill="#000">
+                  <path d="M7.8 12c.3 0 .5-.2.5-.5S8 11 7.7 11s-.5.2-.5.5.3.5.5.5Z" />
+                  <path
+                    d="M17 4h-2V2h-1v2H6V2H5v2H3c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V5c0-.6-.5-1-1-1Zm0 12H3V9h14v7ZM3 8V5h2v2h1V5h8v2h1V5h2v3H3Z" />
+                  <path
+                    d="M10 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.3 12c.3 0 .4-.2.4-.5s-.1-.5-.4-.5c-.4 0-.6.2-.6.5s.3.5.6.5ZM7.8 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.3-.5-.6-.5ZM5.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.3 13c-.4 0-.6.2-.6.5s.3.5.6.5.4-.2.4-.5-.1-.5-.4-.5ZM14.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM14.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" />
+                </g>
+              </svg>
+              <input class="modal-field" type="text" id="appointment-form-date-in" name="appointment-date"
+                placeholder="27 апреля 2020" required>
+              <span class="date-tip date-tip-error">Мы не можем отправить вас в прошлое.</span>
+            </div>
+            <div class="modal-field-group appointment-form-date-out">
+              <label class="modal-form-label" for="appointment-form-date-out">Дата Выезда:</label>
+              <input class="modal-field" type="text" id="appointment-form-date-out" name="appointment-time"
+                placeholder="1 сентября 2023" required>
+              <svg class="modal-field-icon" aria-hidden="true" focusable="false" width="20" height="20"
+                viewBox="0 0 20 20" fill="none" role="img" xmlns="http://www.w3.org/2000/svg">
+                <g opacity=".3" fill="#000">
+                  <path d="M7.8 12c.3 0 .5-.2.5-.5S8 11 7.7 11s-.5.2-.5.5.3.5.5.5Z" />
+                  <path
+                    d="M17 4h-2V2h-1v2H6V2H5v2H3c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V5c0-.6-.5-1-1-1Zm0 12H3V9h14v7ZM3 8V5h2v2h1V5h8v2h1V5h2v3H3Z" />
+                  <path
+                    d="M10 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.3 12c.3 0 .4-.2.4-.5s-.1-.5-.4-.5c-.4 0-.6.2-.6.5s.3.5.6.5ZM7.8 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.3-.5-.6-.5ZM5.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.3 13c-.4 0-.6.2-.6.5s.3.5.6.5.4-.2.4-.5-.1-.5-.4-.5ZM14.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM14.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" />
+                </g>
+              </svg>
+              <span class="date-tip">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
+            <div class="modal-range-wrapper">
+              <div class="range-wrapper">
+                <label class="modal-form-label" for="group-adults">Взрослые:</label>
+                <div class="modal-range-buttons">
+                  <button class="range-button range-button-minus" type="button">
+                    <span class="range-icon">
+                      <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" role="img"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 9v2h14V9H3Z" />
+                      </svg>
+                    </span>
+                  </button>
+                  <input class="count-input" type="text" id="group-adults" name="adults-count" placeholder="2"
+                    autocomplete="off" required>
+                  <button class="range-button range-button-plus" type="button">
+                    <span class="range-icon">
+                      <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" role="img"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div class="range-wrapper">
+                <span class="modal-form-label">
+                  <label class="modal-form-label-kids" for="group-kids">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" aria-labelledby="tooltip-label-date" type="button">
+                      <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="26" height="26"
+                        viewBox="0 0 26 26" role="img" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="13" cy="13" r="13" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#fff" />
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">
+                      Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                      размещаются бесплатно.</span>
+                  </span>
+                </span>
+                <div class="modal-range-buttons">
+                  <button class="range-button range-button-minus" type="button">
+                    <span class="range-icon">
+                      <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" role="img"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 9v2h14V9H3Z" />
+                      </svg>
+                    </span>
+                  </button>
+                  <input class="count-input" type="text" id="group-kids" name="kids-count" placeholder="2"
+                    autocomplete="off" required>
+                  <button class="range-button range-button-plus" type="button">
+                    <span class="range-icon">
+                      <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" role="img"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="button modal-appointment-submit" type="submit">Найти
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
+    <script src="/js/script.js"></script>
+
+
+
+
+
   </body>
 
 </html>
