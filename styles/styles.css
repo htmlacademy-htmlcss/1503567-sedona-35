@@ -436,15 +436,6 @@ body {
   position: relative;
 }
 
-.advantages-title-advice {
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0 auto 30px;
-  width: 175px;
-}
-
 .advantages-title::before {
   position: absolute;
   width: 60px;
@@ -465,6 +456,52 @@ body {
   margin-left: -30px;
   background-color: rgba(255, 255, 255, 0.3);
   content: "";
+}
+
+.advantages-title-advice {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 93px auto 30px;
+  width: 175px;
+  position: relative;
+}
+
+.icon-home::before {
+  position: absolute;
+  background-image: url(../images/index/home.svg);
+  background-repeat: no-repeat;
+  content: "";
+  bottom: 58px;
+  left: 50%;
+  transform:translateX(-50%);
+  width: 75px;
+  height: 72px;
+}
+
+.icon-food::before {
+  position: absolute;
+  background-image: url(../images/index/food.svg);
+  background-repeat: no-repeat;
+  content: "";
+  bottom: 58px;
+  left: 50%;
+  transform:translateX(-50%);
+  width: 75px;
+  height: 72px;
+}
+
+.icon-souvenir::before {
+  position: absolute;
+  background-image: url(../images/index/gift.svg);
+  background-repeat: no-repeat;
+  content: "";
+  bottom: 58px;
+  left: 50%;
+  transform:translateX(-50%);
+  width: 75px;
+  height: 72px;
 }
 
 .advantages-description {
@@ -499,31 +536,6 @@ body {
 
 .background-3 {
   background-color: #FFFFFF;
-}
-
-.advantages-picture {
-  display: block;
-  min-width: 75px;
-  min-height: 76px;
-  margin: 0 auto 30px;
-}
-
-.icon-home {
-  background-image: url(/images/index/home.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-food {
-  background-image: url(/images/index/food.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-souvenir {
-  background-image: url(/images/index/gift.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .search {
@@ -773,8 +785,8 @@ body {
   display: block;
 }
 
-.modal-close-icon:active  {
-opacity: 30%;
+.modal-close-icon:active {
+  opacity: 30%;
 }
 
 .modal-close-button:hover {
@@ -911,7 +923,7 @@ opacity: 30%;
   line-height: 0;
   background-color: transparent;
   cursor: pointer;
-  fill:rgba(0, 0, 0, 0.3);
+  fill: rgba(0, 0, 0, 0.3);
 
 }
 
@@ -935,7 +947,7 @@ opacity: 30%;
 
 .range-button-minus:active,
 .range-button-plus:active {
-  fill:rgba(0, 0, 0, 0.3);
+  fill: rgba(0, 0, 0, 0.3);
 }
 
 .count-input {
@@ -1130,7 +1142,7 @@ opacity: 30%;
   display: flex;
   flex-direction: column;
   margin-top: 56px;
-  margin-left:auto
+  margin-left: auto
 }
 
 .catalog-form {
@@ -1464,6 +1476,16 @@ opacity: 30%;
   gap: 20px;
   padding-left: 0;
   margin: 0;
+  position: relative;
+}
+
+.product-list::after {
+  content: "";
+  position: absolute;
+  width: 1060px;
+  height: 1px;
+  background-color: #e6e6e6;
+  bottom: -40px;
 }
 
 .product-item {
