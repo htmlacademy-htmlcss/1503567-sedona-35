@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
 
   <body>
@@ -62,7 +64,7 @@
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-items">
-                <a class="breadcrumbs-link" href="index.html">
+                <a class="breadcrumbs-link" href="index.html" title="На главную страницу">
                   <svg class="breadcrumbs-home-icon" width="12" height="12" viewbox="0 0 13 13" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" fill="#fff" />
@@ -70,16 +72,9 @@
                   </svg>
                 </a>
               </li>
-              <li class="breadcrumbs-items">
-                <a class="breadcrumbs-icon">
-                  <svg width="8" height="10" viewbox="0 0 8 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M6.92 4.97 2.17.72c-.25-.25-.75-.25-1.13 0-.37.25-.25.75 0 1l4.13 3.75-4 3.75a.76.76 0 0 0 0 1c0 .12.37.25.5.25.12 0 .37-.13.5-.25l4.75-4.25a.59.59 0 0 0 0-1Z" />
-                  </svg>
-                </a>
-              </li>
-              <li class="breadcrumbs-items">
-                <a class="breadcrumbs-link">Гостиницы</a>
+
+              <li class="breadcrumbs-items-last">
+                <a class="breadcrumbs-link" title="Эта страница">Гостиницы</a>
               </li>
             </ul>
           </div>
@@ -90,23 +85,24 @@
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="control-input visually-hidden" type="checkbox" name="swimming-pool" required
-                        checked>
+                    <label class="control" tabindex="0">
+                      <input class="control-input visually-hidden" type="checkbox" name="swimming-pool" tabindex="-1"
+                        required checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="control-input visually-hidden" type="checkbox" name="Parking" required checked>
+                    <label class="control" tabindex="0">
+                      <input class="control-input visually-hidden" type="checkbox" name="Parking" tabindex="-1" required
+                        checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="control-input visually-hidden" type="checkbox" name="Wi-Fi" required>
+                    <label class="control" tabindex="0">
+                      <input class="control-input visually-hidden" type="checkbox" name="Wi-Fi" tabindex="-1" required>
                       <span class="control-mark"></span>
                       <span class="control-label">Wi-Fi</span>
                     </label>
@@ -114,28 +110,28 @@
                 </ul>
               </fieldset>
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Тип жилья:</legend>
+                <legend class="catalog-filter-title">Тип Жилья:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="control-input-radio visually-hidden" type="radio" name="type" value="hotel" required
-                        checked>
+                    <label class="control" tabindex="0">
+                      <input class="control-input-radio visually-hidden" type="radio" name="type" value="hotel"
+                        tabindex="-1" required checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control">
+                    <label class="control" tabindex="0">
                       <input class="control-input-radio visually-hidden" type="radio" name="type" value="Motel"
-                        required>
+                        tabindex="-1" required>
                       <span class="control-mark"></span>
                       <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control">
+                    <label class="control" tabindex="0">
                       <input class="control-input-radio visually-hidden" type="radio" name="type" value="Apartment"
-                        required>
+                        tabindex="-1" required>
                       <span class="control-mark"></span>
                       <span class="control-label">Апартаменты</span>
                     </label>
@@ -177,12 +173,14 @@
         </header>
         <section class="search-result">
           <p class="result">Найдено гостиниц: 38</p>
-          <label class="visually-hidden" for="sorting">Сортировка</label>
-          <select class="select-control" id="sorting">
-            <option value="popular">Сначала популярные</option>
-            <option value="cheap" selected>Сначала дешёвые</option>
-            <option value="expensive">Сначала дорогое</option>
-          </select>
+          <div class="sort-form">
+            <label class="visually-hidden" for="sorting">Сортировка</label>
+            <select class="select-control" id="sorting">
+              <option value="popular">Сначала популярные</option>
+              <option value="cheap" selected>Сначала дешевые</option>
+              <option value="expensive">Сначала дорогое</option>
+            </select>
+          </div>
           <section class="toggle">
             <a class="card-grid-toggle card-grid-toggle-current">
               <span class="visually-hidden">Показать карточки</span>
@@ -326,8 +324,8 @@
             <br>честное бойскаутское!
           </p>
           <form class="appointent-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="mail-field" placeholder="Ваш e-mail" type="email" name="e-mail address">
-            <button class="button big-button blue" id="submit-button" type="submit">Подписаться</button>
+            <input class="mail-field" placeholder="Ваш e-mail" type="email" name="e-mail address" required>
+            <button class="button big-button blue" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
