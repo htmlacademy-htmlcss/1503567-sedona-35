@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
 
   <body>
@@ -90,23 +92,23 @@
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="control-input visually-hidden" type="checkbox" name="swimming-pool" required
+                    <label class="control" tabindex="0">
+                      <input class="control-input visually-hidden" type="checkbox" name="swimming-pool" tabindex="-1" required
                         checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="control-input visually-hidden" type="checkbox" name="Parking" required checked>
+                    <label class="control" tabindex="0">
+                      <input class="control-input visually-hidden" type="checkbox" name="Parking" tabindex="-1" required checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="control-input visually-hidden" type="checkbox" name="Wi-Fi" required>
+                    <label class="control"tabindex="0">
+                      <input class="control-input visually-hidden" type="checkbox" name="Wi-Fi" tabindex="-1" required>
                       <span class="control-mark"></span>
                       <span class="control-label">Wi-Fi</span>
                     </label>
@@ -114,27 +116,27 @@
                 </ul>
               </fieldset>
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Тип жилья:</legend>
+                <legend class="catalog-filter-title">Тип Жилья:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="control-input-radio visually-hidden" type="radio" name="type" value="hotel" required
+                    <label class="control" tabindex="0">
+                      <input class="control-input-radio visually-hidden" type="radio" name="type" value="hotel" tabindex="-1" required
                         checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="control-input-radio visually-hidden" type="radio" name="type" value="Motel"
+                    <label class="control" tabindex="0">
+                      <input class="control-input-radio visually-hidden" type="radio" name="type" value="Motel" tabindex="-1"
                         required>
                       <span class="control-mark"></span>
                       <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="control-input-radio visually-hidden" type="radio" name="type" value="Apartment"
+                    <label class="control" tabindex="0">
+                      <input class="control-input-radio visually-hidden" type="radio" name="type" value="Apartment" tabindex="-1"
                         required>
                       <span class="control-mark"></span>
                       <span class="control-label">Апартаменты</span>
@@ -177,12 +179,14 @@
         </header>
         <section class="search-result">
           <p class="result">Найдено гостиниц: 38</p>
-          <label class="visually-hidden" for="sorting">Сортировка</label>
-          <select class="select-control" id="sorting">
-            <option value="popular">Сначала популярные</option>
-            <option value="cheap" selected>Сначала дешёвые</option>
-            <option value="expensive">Сначала дорогое</option>
-          </select>
+          <div class="sort-form">
+            <label class="visually-hidden" for="sorting">Сортировка</label>
+            <select class="select-control" id="sorting">
+              <option value="popular">Сначала популярные</option>
+              <option value="cheap" selected>Сначала дешевые</option>
+              <option value="expensive">Сначала дорогое</option>
+            </select>
+          </div>
           <section class="toggle">
             <a class="card-grid-toggle card-grid-toggle-current">
               <span class="visually-hidden">Показать карточки</span>
@@ -326,8 +330,8 @@
             <br>честное бойскаутское!
           </p>
           <form class="appointent-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="mail-field" placeholder="Ваш e-mail" type="email" name="e-mail address">
-            <button class="button big-button blue" id="submit-button" type="submit">Подписаться</button>
+            <input class="mail-field" placeholder="Ваш e-mail" type="email" name="e-mail address" required>
+            <button class="button big-button blue" type="submit">Подписаться</button>
           </form>
         </section>
       </main>

@@ -316,7 +316,7 @@ body {
 
 .invisible:focus {
   background-color: transparent;
-  border: #83B3D3 solid 3px;
+  outline: 3px solid #83B3D3;
   border-radius: 4px;
 }
 
@@ -644,10 +644,9 @@ body {
   background-color: #F2F2F2;
   border: 0;
   border-radius: 4px 0 0 4px;
-
 }
 
-#submit-button {
+.appointent-form>button{
   border-radius: 0 4px 4px 0;
   padding: 8px 50px;
 }
@@ -658,16 +657,19 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  min-height: 120px;
-  flex-wrap: nowrap;
-  padding-top: 7px;
+  flex-wrap: wrap;
+  padding: 45px 70px 25px;
+}
+
+.page-footer > * {
+  max-width: 26%;
+  flex-shrink: 0;
+  width: 100%;
+  margin: 0;
 }
 
 .footer-social {
   display: flex;
-  min-width: 142px;
-  min-height: 40px;
-  margin-left: 70px;
 }
 
 .footer-social-list {
@@ -675,9 +677,8 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  min-width: 142px;
-  height: 40px;
-  justify-content: center;
+  max-width: 144px;
+  justify-content: start;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -721,6 +722,9 @@ body {
 .footer-phone-number {
   min-width: 332px;
   min-height: 40px;
+  max-width: 35%;
+  text-align: center;
+  padding-left: 25px;
 }
 
 .contacts-phone {
@@ -746,7 +750,7 @@ body {
 }
 
 .footer-contact-academy {
-  margin-right: 70px;
+  text-align: end;
 }
 
 .develop-logo {
@@ -826,11 +830,12 @@ body {
 
 .modal-close-button:focus {
   background-color: #e6e6e6;
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
 }
 
 .modal-close-button:active {
   background-color: #e6e6e6;
+  outline: none;
 }
 
 .modal {
@@ -1370,7 +1375,11 @@ body {
   opacity: 0.3;
 }
 
-.control-mark:focus {
+.control:focus {
+  outline: none;
+}
+
+.control:focus .control-mark {
   outline: 3px solid #83b3d3;
 }
 
@@ -1440,6 +1449,7 @@ body {
 }
 
 .card-grid-toggle:focus {
+  outline: none;
   border: 2px solid #68A2CA;
 }
 
@@ -1464,18 +1474,23 @@ body {
 }
 
 .select-control {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
   width: 292px;
-  min-height: 49px;
+  height: 49px;
   margin: 0;
   padding: 0;
   margin-right: 70px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
   color: #333333;
-  padding-left: 20px;
+  padding-left: 18px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-color: #FFFFFF;
 }
 
 .select-control:hover {
@@ -1484,14 +1499,33 @@ body {
 
 .select-control:focus {
   border-color: #68A2CA;
+  outline: none;
 }
 
 .select-control:active {
-  border-color: #3F5E72;
+  border-color:#3F5E72;
+
 }
 
 .select-control:default {
   opacity: 30%;
+}
+
+.sort-form {
+  position: relative;
+}
+
+.sort-form::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 7px;
+  background: url(../images/catalog/arrow-select.svg);
+  background-repeat: no-repeat;
+  top: 22px;
+  right: 90px;
+  background-position-y: 50%;
+  background-position-x: 50%;
 }
 
 .catalog {
@@ -1663,5 +1697,5 @@ body {
 }
 
 .html-logo {
-  object-fit: contain
+  object-fit: contain;
 }
