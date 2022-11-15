@@ -646,7 +646,7 @@ body {
   border-radius: 4px 0 0 4px;
 }
 
-.appointent-form>button{
+.appointent-form > button {
   border-radius: 0 4px 4px 0;
   padding: 8px 50px;
 }
@@ -1111,6 +1111,24 @@ body {
 }
 
 .breadcrumbs-items {
+  margin-right: 28px;
+  position: relative;
+}
+
+.breadcrumbs-items::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 20px;
+  background-image: url(../images/catalog/arrow-navigation.svg);
+  background-repeat: no-repeat;
+  top: 5px;
+  left: 23px;
+}
+
+.breadcrumbs-items-last {
+  margin-right: 0;
   padding-right: 10px;
 }
 
@@ -1503,7 +1521,7 @@ body {
 }
 
 .select-control:active {
-  border-color:#3F5E72;
+  border-color: #3F5E72;
 
 }
 
