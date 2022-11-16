@@ -82,6 +82,7 @@ body {
   color: inherit;
   text-transform: capitalize;
   text-decoration: none;
+  padding: 20px 0;
 }
 
 .navigation-list {
@@ -113,11 +114,11 @@ body {
 }
 
 .navigation-item:hover {
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .navigation-item:focus {
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .navigation-link-current::before {
@@ -310,7 +311,7 @@ body {
 }
 
 .invisible:hover {
-  opacity: 60%;
+  opacity: 0.6;
   background-color: transparent;
 }
 
@@ -504,7 +505,6 @@ body {
   height: 72px;
 }
 
-
 .icon-food::before {
   position: absolute;
   background-image: url(../images/index/food.svg);
@@ -644,6 +644,23 @@ body {
   background-color: #F2F2F2;
   border: 0;
   border-radius: 4px 0 0 4px;
+}
+
+.mail-field:hover {
+  opacity: 0.6;
+}
+
+.mail-field:focus {
+  outline: 3px solid #68A2CA;
+}
+
+.mail-field:active {
+  border-color: #3F5E72;
+
+}
+
+.mail-field:disabled {
+  opacity: 0.3;
 }
 
 .appointent-form > button {
@@ -821,7 +838,7 @@ body {
 }
 
 .modal-close-icon:active {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .modal-close-button:hover {
@@ -915,6 +932,10 @@ body {
 .modal-field:focus {
   background: #e6e6e6;
   outline: 3px solid #83b3d3;
+}
+
+.modal-field:disabled {
+  opacity: 0.3;
 }
 
 .date-tip {
@@ -1154,7 +1175,7 @@ body {
 }
 
 .breadcrumbs-home-icon:hover {
-  opacity: 60%;
+  opacity: 0.6;
 }
 
 .breadcrumbs-home-icon:focus {
@@ -1162,7 +1183,7 @@ body {
 }
 
 .breadcrumbs-home-icon:active {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .breadcrumbs-icon {
@@ -1280,6 +1301,10 @@ body {
   outline: 2px solid #000000;
 }
 
+.catalog-filter-value:disabled {
+  opacity: 0.3;
+}
+
 .value-from {
   border-radius: 4px 0 0 4px;
 }
@@ -1343,11 +1368,16 @@ body {
 .range-toggle:focus {
   border: 3px solid #83b3d3;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  outline: none;
 }
 
 .range-toggle:active {
   border: 2px solid #83b3d3;
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+.range-toggle:disabled {
+  opacity: 0.3;
 }
 
 .toggle-min {
@@ -1393,19 +1423,21 @@ body {
   opacity: 0.3;
 }
 
+.control-input[type="checkbox"]:focus + .control,
 .control:focus {
   outline: none;
 }
 
+.control-input[type="checkbox"]:focus + .control .control-mark,
 .control:focus .control-mark {
   outline: 3px solid #83b3d3;
 }
 
-.control-input:disabled + .control-mark {
+.control-input:disabled + .control .control-mark {
   border-color: #242424;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::before {
+.control-input[type="checkbox"]:checked + .control .control-mark::before {
   position: absolute;
   top: 6px;
   left: 4px;
@@ -1416,11 +1448,11 @@ body {
   background-repeat: no-repeat;
 }
 
-.control-input-radio[type="radio"] + .control-mark {
+.control-input-radio[type="radio"] + .control .control-mark {
   border-radius: 50%;
 }
 
-.control-input-radio[type="radio"]:checked + .control-mark::before {
+.control-input-radio[type="radio"]:checked + .control .control-mark::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -1429,6 +1461,16 @@ body {
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
+}
+
+.control-input-radio[type="radio"]:focus + .control,
+.control:focus {
+  outline: none;
+}
+
+.control-input-radio[type="radio"]:focus + .control .control-mark,
+.control:focus .control-mark {
+  outline: 3px solid #83b3d3;
 }
 
 .cost-tittle {
@@ -1526,7 +1568,7 @@ body {
 }
 
 .select-control:default {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .sort-form {
@@ -1582,7 +1624,7 @@ body {
   border-radius: 4px;
 }
 
-.poduct-frame {
+.product-frame {
   margin: 20px;
 }
 

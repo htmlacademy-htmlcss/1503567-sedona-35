@@ -8,7 +8,7 @@ document.querySelector('.modal-container .modal').addEventListener('click', (e) 
   e.stopPropagation();
 });
 
-document.querySelector('.modal-actived').addEventListener('click', (e) => {
+document.querySelector('.modal-opening').addEventListener('click', (e) => {
   e.preventDefault();
   document.querySelector('.modal-container').classList.remove('modal-container-close');
 });
