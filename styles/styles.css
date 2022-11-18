@@ -82,6 +82,7 @@ body {
   color: inherit;
   text-transform: capitalize;
   text-decoration: none;
+  padding: 20px 16px;
 }
 
 .navigation-list {
@@ -106,24 +107,23 @@ body {
 .navigation-item {
   display: block;
   min-height: 24px;
-  padding: 20px 16px;
   cursor: pointer;
   position: relative;
   width: max-content;
 }
 
 .navigation-item:hover {
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .navigation-item:focus {
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .navigation-link-current::before {
   position: absolute;
   right: 12px;
-  bottom: -1px;
+  bottom: -21px;
   left: 12px;
   height: 2px;
   background-color: #756257;
@@ -132,7 +132,7 @@ body {
 
 .navigation-link-favorite,
 .navigation-link-search {
-  padding: 22px 6px;
+  padding: 22px 22px;
 }
 
 .navigation-item-favorite {
@@ -146,7 +146,7 @@ body {
   width: 20px;
   height: 20px;
   left: 20px;
-  top: 11px;
+  top: -10px;
   border-radius: 50%;
   color: #ffffff;
   font-size: 10px;
@@ -310,7 +310,7 @@ body {
 }
 
 .invisible:hover {
-  opacity: 60%;
+  opacity: 0.6;
   background-color: transparent;
 }
 
@@ -504,7 +504,6 @@ body {
   height: 72px;
 }
 
-
 .icon-food::before {
   position: absolute;
   background-image: url(../images/index/food.svg);
@@ -644,6 +643,23 @@ body {
   background-color: #F2F2F2;
   border: 0;
   border-radius: 4px 0 0 4px;
+}
+
+.mail-field:hover {
+  opacity: 0.6;
+}
+
+.mail-field:focus {
+  outline: 3px solid #68A2CA;
+}
+
+.mail-field:active {
+  border-color: #3F5E72;
+
+}
+
+.mail-field:disabled {
+  opacity: 0.3;
 }
 
 .appointent-form > button {
@@ -821,7 +837,7 @@ body {
 }
 
 .modal-close-icon:active {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .modal-close-button:hover {
@@ -915,6 +931,10 @@ body {
 .modal-field:focus {
   background: #e6e6e6;
   outline: 3px solid #83b3d3;
+}
+
+.modal-field:disabled {
+  opacity: 0.3;
 }
 
 .date-tip {
@@ -1154,7 +1174,7 @@ body {
 }
 
 .breadcrumbs-home-icon:hover {
-  opacity: 60%;
+  opacity: 0.6;
 }
 
 .breadcrumbs-home-icon:focus {
@@ -1162,7 +1182,7 @@ body {
 }
 
 .breadcrumbs-home-icon:active {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .breadcrumbs-icon {
@@ -1280,6 +1300,10 @@ body {
   outline: 2px solid #000000;
 }
 
+.catalog-filter-value:disabled {
+  opacity: 0.3;
+}
+
 .value-from {
   border-radius: 4px 0 0 4px;
 }
@@ -1343,11 +1367,16 @@ body {
 .range-toggle:focus {
   border: 3px solid #83b3d3;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  outline: none;
 }
 
 .range-toggle:active {
   border: 2px solid #83b3d3;
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+.range-toggle:disabled {
+  opacity: 0.3;
 }
 
 .toggle-min {
@@ -1393,19 +1422,21 @@ body {
   opacity: 0.3;
 }
 
+.control-input[type="checkbox"]:focus + .control,
 .control:focus {
   outline: none;
 }
 
+.control-input[type="checkbox"]:focus + .control .control-mark,
 .control:focus .control-mark {
   outline: 3px solid #83b3d3;
 }
 
-.control-input:disabled + .control-mark {
+.control-input:disabled + .control .control-mark {
   border-color: #242424;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::before {
+.control-input[type="checkbox"]:checked + .control .control-mark::before {
   position: absolute;
   top: 6px;
   left: 4px;
@@ -1416,11 +1447,11 @@ body {
   background-repeat: no-repeat;
 }
 
-.control-input-radio[type="radio"] + .control-mark {
+.control-input-radio[type="radio"] + .control .control-mark {
   border-radius: 50%;
 }
 
-.control-input-radio[type="radio"]:checked + .control-mark::before {
+.control-input-radio[type="radio"]:checked + .control .control-mark::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -1429,6 +1460,16 @@ body {
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
+}
+
+.control-input-radio[type="radio"]:focus + .control,
+.control:focus {
+  outline: none;
+}
+
+.control-input-radio[type="radio"]:focus + .control .control-mark,
+.control:focus .control-mark {
+  outline: 3px solid #83b3d3;
 }
 
 .cost-tittle {
@@ -1526,7 +1567,7 @@ body {
 }
 
 .select-control:default {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .sort-form {
@@ -1582,7 +1623,7 @@ body {
   border-radius: 4px;
 }
 
-.poduct-frame {
+.product-frame {
   margin: 20px;
 }
 
