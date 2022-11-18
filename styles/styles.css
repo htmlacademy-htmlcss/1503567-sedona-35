@@ -82,7 +82,7 @@ body {
   color: inherit;
   text-transform: capitalize;
   text-decoration: none;
-  padding: 20px 0;
+  padding: 20px 16px; /*padding: 20px 16px;*/
 }
 
 .navigation-list {
@@ -107,7 +107,7 @@ body {
 .navigation-item {
   display: block;
   min-height: 24px;
-  padding: 20px 16px;
+  /*padding: 20px 16px;*/
   cursor: pointer;
   position: relative;
   width: max-content;
@@ -124,7 +124,8 @@ body {
 .navigation-link-current::before {
   position: absolute;
   right: 12px;
-  bottom: -1px;
+  /*bottom: -1px;*/
+  bottom: -21px;
   left: 12px;
   height: 2px;
   background-color: #756257;
@@ -133,7 +134,8 @@ body {
 
 .navigation-link-favorite,
 .navigation-link-search {
-  padding: 22px 6px;
+  /*padding: 22px 6px;*/
+  padding: 22px 22px;
 }
 
 .navigation-item-favorite {
@@ -147,7 +149,7 @@ body {
   width: 20px;
   height: 20px;
   left: 20px;
-  top: 11px;
+  top: -10px;
   border-radius: 50%;
   color: #ffffff;
   font-size: 10px;
